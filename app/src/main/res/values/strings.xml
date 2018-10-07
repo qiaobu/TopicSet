@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">错题本</string>
+
+    <string name="main">首页</string>
+    <string name="add">添加</string>
+    <string name="export">生成</string>
+    <string name="mine">我的</string>
+
+    <string name="courseName">课程名</string>
+    <string name="chinese">语  文</string>
+    <string name="mathmatic">数  学</string>
+    <string name="english">英  语</string>
+    <string name="physics">物  理</string>
+    <string name="chemistry">化  学</string>
+    <string name="append">+</string>
+
+    <string name="problem">题  目</string>
+    <string name="answer">答  案</string>
+    <string name="done">完  成</string>
+</resources>

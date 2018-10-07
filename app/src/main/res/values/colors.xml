@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="tab_checked">#ED6A2C</color>
+
+    <color name="subject1">#FF8C00</color>
+    <color name="subject2">#8491FA</color>
+    <color name="subject3">#A2CD5A</color>
+    <color name="subject4">#F57CF9</color>
+    <color name="subject5">#F76F8B</color>
+    <color name="addSubject">#84FA8A</color>
+</resources>
