@@ -4,9 +4,13 @@
     <string name="main">首页</string>
     <string name="add">添加</string>
     <string name="export">生成</string>
-    <string name="mine">我的</string>
+    <!--string name="mine">我的</string-->
 
-    <string name="courseName">课程名</string>
+    <string name="selectTitle">选择错题范围</string>
+    <string name="courseName">课程</string>
+    <string name="gradeName">年纪</string>
+    <string name="semesterName">学期</string>
+
     <string name="chinese">语  文</string>
     <string name="mathmatic">数  学</string>
     <string name="english">英  语</string>
@@ -14,7 +18,25 @@
     <string name="chemistry">化  学</string>
     <string name="append">+</string>
 
+
     <string name="problem">题  目</string>
     <string name="answer">答  案</string>
     <string name="done">完  成</string>
+
+    <!-- SQL -->
+    <string name="sqlExecute">执行SQL</string>
+    <string name="sqlAdd">新增</string>
+    <string name="sqlDelete">删除</string>
+    <string name="sqlUpdate">修改</string>
+    <string name="sqlSelect">数据查询</string>
+    <string name="sqlCount">统计查询</string>
+    <string name="sqlInput">请输入SQL语句</string>
+    <string name="sqlError">执行出错，请检查SQL语句</string>
+    <string name="sqlSuccess">执行SQL语句成功</string>
+    <string name="sqlUnable">Sorry，还没处理select语句</string>
+
+    <string name="color">颜色</string>
+    <string name="crop">截图</string>
+    <string name="line">划线</string>
+    <string name="text">字体</string>
 </resources>

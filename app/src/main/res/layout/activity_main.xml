@@ -25,6 +25,8 @@
         app:itemTextColor="@drawable/bottom_navigation_selector"
         app:menu="@menu/navigation" />
 
-    <!--app:labelVisibilityMode="labeled"-->
-
+    <!--
+        app:itemIconSize="33dp"
+        app:labelVisibilityMode="labeled"
+     -->
 </LinearLayout>

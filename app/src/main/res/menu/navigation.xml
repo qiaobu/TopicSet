@@ -13,9 +13,9 @@
         android:id="@+id/navigation_export"
         android:icon="@drawable/export"
         android:title="@string/export" />
-    <item
+    <!--item
         android:id="@+id/navigation_person"
         android:icon="@drawable/person"
-        android:title="@string/mine" />
+        android:title="@string/mine" /-->
 
 </menu>

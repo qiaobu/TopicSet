@@ -9,6 +9,8 @@ import android.widget.ListView;
 
 import com.raisin.topicset.R;
 import com.raisin.topicset.adapter.HomeViewAdapter;
+import com.raisin.topicset.sqldb.CourseDao;
+import com.raisin.topicset.sqldb.CourseTbl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,24 +18,15 @@ import java.util.List;
 public class HomeFragment extends Fragment {
 
     private View view;
-    //ListView组件
+    // ListView组件
     private ListView lvCourse;
-    //存储数据
+    // 存储数据
     private List<String> lstCourse = new ArrayList<>();
-    //ListView的数据适配器
+    // ListView的数据适配器
     private HomeViewAdapter homeViewAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-//        //解决点击“我的”回来方法二，首页空白的问题，推荐的方法
-//        if (view != null) {
-//            ViewGroup parent = (ViewGroup) view.getParent();
-//            if (parent != null) {
-//                parent.removeView(view);
-//            }
-//            return view;
-//        }
-
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
         // 初始化组件
@@ -51,11 +44,12 @@ public class HomeFragment extends Fragment {
     }
 
     private void initData() {
-        lstCourse.add("语文");
-        lstCourse.add("数学");
-        lstCourse.add("英语");
-        lstCourse.add("物理");
-        lstCourse.add("化学");
+        // DB
+        CourseDao courseDao = new CourseDao(getContext());
+        List<CourseTbl> lstCourseTbl = courseDao.select(new String[]{"courseName"}, "type = ?", new String[]{"1"}, null, null, "id");
+        for (CourseTbl courseTbl : lstCourseTbl) {
+            lstCourse.add(courseTbl.getCourseName());
+        }
         lstCourse.add("+");
     }
 
